@@ -48,5 +48,13 @@ namespace TP4TUTest
 		{
 			Assert::AreEqual(max2(5, 3), 5);
 		}
+		TEST_METHOD(TestMax2_2)
+		{
+			Assert::AreEqual(max2(3, 5), 5);
+		}
+		TEST_METHOD(TestMax2_3)
+		{
+			Assert::AreEqual(max2(-1, -8), -1);
+		}
 	};
 }
