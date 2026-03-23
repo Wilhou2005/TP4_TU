@@ -12,8 +12,15 @@ namespace TP4TUTest
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(TestEstPair)
 		{
+			Assert::AreEqual(estPair(6), 1);
+
+		}
+
+		TEST_METHOD(TestEstPair2)
+		{
+			Assert::AreEqual(estPair(4), 1);
 		}
 	};
 }
