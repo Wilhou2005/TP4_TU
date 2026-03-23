@@ -108,5 +108,20 @@ namespace TP4TUTest
 		{
 			Assert::AreEqual(contientMajuscule(NULL), 0);
 		}
+
+		TEST_METHOD(TestDivisionExacte_1)
+		{
+			Assert::AreEqual(divisionExacte(10, 2), 1);
+		}
+
+		TEST_METHOD(TestDivisionExacte_2)
+		{
+			Assert::AreEqual(divisionExacte(10, 3), 0);
+		}
+
+		TEST_METHOD(TestDivisionExacte_3)
+		{
+			Assert::AreEqual(divisionExacte(0, 5), 1);
+		}
 	};
 }
