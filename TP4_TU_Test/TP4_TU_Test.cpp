@@ -149,7 +149,17 @@ namespace TP4TUTest
 
 		TEST_METHOD(TestSommeTableau_4)
 		{
-			Assert::AreEqual(sommeTableau(nullptr, 0), 0);
+			Assert::AreEqual(sommeTableau(NULL, 0), 0);
+		}
+		TEST_METHOD(TestSommeTableau_5)
+		{
+			Assert::AreEqual(sommeTableau(NULL, 5), 0);
+		}
+
+		TEST_METHOD(TestSommeTableau_6)
+		{
+			int tab[] = { 1, 2, 3 };
+			Assert::AreEqual(sommeTableau(tab, 0), 0);
 		}
 	};
 }
