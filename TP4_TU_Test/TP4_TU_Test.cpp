@@ -32,6 +32,13 @@ namespace TP4TUTest
 		{
 			Assert::AreEqual(estPair(0), 1);
 		}
-
+		TEST_METHOD(TestEstPair5)
+		{
+			Assert::AreEqual(estPair(-2), 1);
+		}
+		TEST_METHOD(TestEstPair6)
+		{
+			Assert::AreEqual(estPair(-3), 0);
+		}
 	};
 }
