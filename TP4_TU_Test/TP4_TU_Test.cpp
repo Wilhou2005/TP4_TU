@@ -75,5 +75,18 @@ namespace TP4TUTest
 		{
 			Assert::AreEqual(factorielle(4), 24);
 		}
+		TEST_METHOD(TestFactorielle_4)
+		{
+			Assert::AreEqual(factorielle(5), 120);
+		}
+		TEST_METHOD(TestFactorielle_5)
+		{
+			Assert::AreEqual(factorielle(-3), -1);
+		}
+
+		//Questions:1)La factorielle n'est pas définie pour les entiers negatifs 
+		//2)La stratégie la plus simple à adopter serait de renvoyer une valeur d'erreur 
+
+
 	};
 }
