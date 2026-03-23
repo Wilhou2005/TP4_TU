@@ -63,5 +63,14 @@ namespace TP4TUTest
 		//Questionns:1)Le test qui revele le bug le pluys clairement est le test 2
 		//2) int max2(int a, int b) {if (a > b) { return a;}return b;}
 		
+		TEST_METHOD(TestFactorielle_1)
+		{
+			Assert::AreEqual(factorielle(0), 1);
+		}
+		TEST_METHOD(TestFactorielle_2)
+		{
+			Assert::AreEqual(factorielle(1), 1);
+		}
+
 	};
 }
