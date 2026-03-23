@@ -40,5 +40,9 @@ namespace TP4TUTest
 		{
 			Assert::AreEqual(estPair(-3), 0);
 		}
+		//Questions:1)Quand on remplace return n % 2 == 0; tous les test fonctionnent
+		//2)Je peux en déduire sur l'implementation que la condition était incorrecte c'est pour ça que l'on remplace 1 part 0
+		//3)La bonne implémentation est donc int estPair(int n) { return n % 2 == 0;}
+		
 	};
 }
