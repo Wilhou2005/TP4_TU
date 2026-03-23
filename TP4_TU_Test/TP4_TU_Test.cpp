@@ -87,6 +87,23 @@ namespace TP4TUTest
 		//Questions:1)La factorielle n'est pas définie pour les entiers negatifs 
 		//2)La stratégie la plus simple à adopter serait de renvoyer une valeur d'erreur 
 
+		TEST_METHOD(TestContientMajuscule_1)
+		{
+			Assert::AreEqual(contientMajuscule("bonjour"), 0);
+		}
+		TEST_METHOD(TestContientMajuscule_2)
+		{
+			Assert::AreEqual(contientMajuscule("BonJour"), 1);
+		}
+		TEST_METHOD(TestContientMajuscule_3)
+		{
+			Assert::AreEqual(contientMajuscule("ABC"), 1);
+		}
 
+		TEST_METHOD(TestContientMajuscule_4)
+		{
+			Assert::AreEqual(contientMajuscule(""), 0);
+		}
+		
 	};
 }
