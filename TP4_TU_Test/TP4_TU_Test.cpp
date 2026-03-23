@@ -127,5 +127,29 @@ namespace TP4TUTest
 		{
 			Assert::AreEqual(divisionExacte(10, 0), 0);
 		}
+		//Question:Ce cas est dangereux car il provoque une division par 0 et donc le programme ne s'execute pas
+
+		TEST_METHOD(TestSommeTableau_1)
+		{
+			int tab[] = { 1, 2, 3 };
+			Assert::AreEqual(sommeTableau(tab, 3), 6);
+		}
+
+		TEST_METHOD(TestSommeTableau_2)
+		{
+			int tab[] = { 5 };
+			Assert::AreEqual(sommeTableau(tab, 1), 5);
+		}
+
+		TEST_METHOD(TestSommeTableau_3)
+		{
+			int tab[] = { -1, 4, -3 };
+			Assert::AreEqual(sommeTableau(tab, 3), 0);
+		}
+
+		TEST_METHOD(TestSommeTableau_4)
+		{
+			Assert::AreEqual(sommeTableau(nullptr, 0), 0);
+		}
 	};
 }
