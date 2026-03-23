@@ -44,5 +44,9 @@ namespace TP4TUTest
 		//2)Je peux en déduire sur l'implementation que la condition était incorrecte c'est pour ça que l'on remplace 1 part 0
 		//3)La bonne implémentation est donc int estPair(int n) { return n % 2 == 0;}
 		
+		TEST_METHOD(TestMax2_1)
+		{
+			Assert::AreEqual(max2(5, 3), 5);
+		}
 	};
 }
