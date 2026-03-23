@@ -60,5 +60,8 @@ namespace TP4TUTest
 		{
 			Assert::AreEqual(max2(4, 4), 4);
 		}
+		//Questionns:1)Le test qui revele le bug le pluys clairement est le test 2
+		//2) int max2(int a, int b) {if (a > b) { return a;}return b;}
+		
 	};
 }
